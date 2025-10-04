@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+
+   <title>QUIZ SINGAPORE</title>
+   <link rel="stylesheet" href="main2.css">
+</head>
+
+<body>
+   <div class="quiz-title">
+      QUIZ SINGAPORE
+   </div>
+
+   <div class="quiz-container">
+      <!-- progress bar -->
+      <div class="progress-bar-bg">
+         <div class="progress-bar-fill" id="progress-bar-fill"></div>
+      </div>
+
+      <!-- question label -->
+      <div class="question" id="question">
+         Questions will be displayed here. Press start to begin!
+      </div>
+
+      <!-- option buttons -->
+      <select class="drop-down" id="drop-down">
+         <option value="1">Easy 😊</option>
+         <option value="2">Meduim 🤨</option>
+         <option value="3">Hard 😨</option>
+         <option value="4">Extinction 💀</option>
+
+      </select>
+      <!-- option buttons -->
+      <div class="option-container" id="option-container"></div>
+      <!-- score/feedback label -->
+
+      <!-- start button -->
+      <div class="score-label " id="score-label">
+         You scored 0 point(s)
+      </div>
+      <div class="feedback-label" id="feedback-label">
+         N.A
+      </div>
+      <button class="start-button" id="start-btn">START</button>
+   </div>
+
+   <!-- countdown timer -->
+   <div class="timer">
+      <span id="timer-label">15</span>
+   </div>
+
+   <!--so for the class id in css we put something like uh .quiz-singqpore-->
+   <!--bgm selector-->
+   <select class="bgm-selector" id="bgm-selector">
+      <option value=""> -- please select a soundtrack -- </option>
+      <option value="kahoot.mp3"> Kahoot Lobby Music </option>
+      <option value="hunter.mp3">Hunter 🤨</option>
+      <option value="smile.mp3">smile 😨</option>
+      <option value="garden.mp3">Growing Garden 💀</option>
+   </select>
+
+   <button class="music-btn" id="music-btn">🔈Music On</button>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
